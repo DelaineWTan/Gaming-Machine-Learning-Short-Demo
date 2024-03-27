@@ -10,7 +10,6 @@ dataframe = pd.read_csv("dataset/games.csv")
 
 # Set the maximum number of columns to display
 pd.set_option('display.max_columns', None)
-pd.set_option('display.width', 300)
 
 # Skipped preprocessing as it was unnecessary  (handle missing values, encode categorical
 # variables, etc.)
