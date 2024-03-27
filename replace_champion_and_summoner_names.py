@@ -6,15 +6,15 @@ def format_dataframe(dataframe):
     df_formatted = dataframe.copy()
 
     # Load champion names for team 1 from JSON file
-    with open('champion_info.json') as f:
+    with open('dataset/champion_info.json') as f:
         champion_info_t1 = json.load(f)
 
     # Load champion names for team 2 from JSON file
-    with open('champion_info.json') as f:
+    with open('dataset/champion_info.json') as f:
         champion_info_t2 = json.load(f)
 
     # Load summoner spell names from JSON file
-    with open('summoner_spell_info.json') as f:
+    with open('dataset/summoner_spell_info.json') as f:
         summoner_spell_info = json.load(f)
 
     # Extract champion name mapping from champion_info

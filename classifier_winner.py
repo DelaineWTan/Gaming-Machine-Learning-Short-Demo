@@ -8,7 +8,7 @@ import json
 from replace_champion_and_summoner_names import format_dataframe
 
 # Load the dataset
-dataframe = pd.read_csv("games.csv")
+dataframe = pd.read_csv("dataset/games.csv")
 
 # Set the maximum number of columns to display
 pd.set_option('display.max_columns', None)
