@@ -12,7 +12,7 @@ dataframe = pd.read_csv("dataset/games.csv")
 
 # Set the maximum number of columns to display
 pd.set_option('display.max_columns', None)
-pd.set_option('display.width', 1000)
+pd.set_option('display.width', 300)
 
 # Skipped preprocessing as it was unnecessary  (handle missing values, encode categorical
 # variables, etc.)
@@ -52,7 +52,7 @@ print(f"- Correct predictions: {correct_predictions}")
 print(f"- Incorrect predictions: {incorrect_predictions}")
 print(f"Accuracy: {accuracy:.2%}")
 
-print("\n\n\n#################### PREDICTIONS ####################")
+print("\n#################### PREDICTIONS ####################")
 # Select 10 random rows from the original dataframe
 new_data = dataframe.sample(n=10, axis=0, random_state=42)
 print("10 Random Rows from Original Dataframe")
