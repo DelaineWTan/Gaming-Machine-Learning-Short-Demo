@@ -65,6 +65,6 @@ def run(episodes, is_training=True, render=False):
 
 
 if __name__ == '__main__':
-    # run(20000)
+    #run(10000)
 
     run(1000, is_training=False, render=True)
