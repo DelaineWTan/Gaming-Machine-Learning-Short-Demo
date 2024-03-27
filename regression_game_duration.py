@@ -3,6 +3,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
+import statsmodels.api as sm
 
 # Load the dataset
 dataframe = pd.read_csv("dataset/games.csv")
@@ -29,8 +30,6 @@ model.fit(X_train, y_train)
 
 # Make predictions on the testing set
 y_pred = model.predict(X_test)
-
-import statsmodels.api as sm
 
 # Add a constant term to the features
 X_train_const = sm.add_constant(X_train)
